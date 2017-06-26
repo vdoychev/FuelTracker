@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.admin.fueltracker.DeleteCarActivity">
+
+    <TextView
+        android:id="@+id/chooseCarTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Car:"
+        android:layout_marginTop="55dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="45dp"
+        android:layout_marginStart="45dp" />
+
+    <Spinner
+        android:id="@+id/deleteCarSpinner"
+        android:layout_width="218dp"
+        android:layout_height="22dp"
+        android:layout_alignBottom="@+id/chooseCarTxt"
+        android:layout_toRightOf="@+id/chooseCarTxt"
+        android:layout_toEndOf="@+id/chooseCarTxt"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp" />
+
+    <Button
+        android:id="@+id/deleteCarBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:onClick="deleteCar"
+        android:layout_below="@+id/deleteCarSpinner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="93dp" />
+</RelativeLayout>
